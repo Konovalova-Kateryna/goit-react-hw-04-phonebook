@@ -37,6 +37,7 @@ const App = () => {
       return;
     }
     setContacts([newContact, ...contacts]);
+    Notiflix.Notify.success(`Contact added`);
   };
 
   const deleteContact = contactId => {
